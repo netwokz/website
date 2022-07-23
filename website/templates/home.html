@@ -1,5 +1,11 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
-%}
-<h1 align="center">Notes</h1>
-
-{% endblock %}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<h1 align="center">Server Status</h1>
+{% for name, ip in dictionary.items()%}
+<h5>{{ name + " is " }}</h5>
+{%if ip[1] == 'UP'%}
+<h5 style="color: #00ff00">{{ ip[1] }}</h5>
+{% else %}
+<h5 style="color: #ff0000">{{ ip[1] }}</h5>
+{% endif %}
+<br />
+{% endfor %} {% endblock %}
