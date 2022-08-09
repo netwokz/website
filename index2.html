@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Server Status</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Google Web Font Embed -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/templatemo_main.css" />
+
+</head>
+
+<body>
+
+    <script>
+        fetch("convert.json")
+            .then(response => response.json())
+            .then(data => {
+                //console.log(data)
+                for (i = 0; i < 25; i++) {
+                    document.getElementById(i.toString()).innerHTML = data[i][0]
+                    document.getElementById(i.toString() + "_status").innerHTML = data[i][2]
+                }
+            })
+    </script>
+
+    <div id="main-wrapper">
+        <div class="image-section">
+            <div class="image-container" background="#4C535A">
+                <img src=" images/zoom-bg-5.jpg" id="menu-img" class="main-img inactive" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div
+                class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-15 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 templatemo-content-wrapper">
+                <div class=" templatemo-content">
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa-light fa-server"></i>
+                                    <h2><span id="0"></span></h2>
+                                    <h2><span id="0_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="1"></span></h2>
+                                    <h2><span id="1_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="2"></span></h2>
+                                    <h2><span id="2_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="3"></span></h2>
+                                    <h2><span id="3_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="4"></span></h2>
+                                    <h2><span id="4_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="5"></span></h2>
+                                    <h2><span id="5_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="6"></span></h2>
+                                    <h2><span id="6_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="7"></span></h2>
+                                    <h2><span id="7_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="8"></span></h2>
+                                    <h2><span id="8_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="9"></span></h2>
+                                    <h2><span id="9_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="10"></span></h2>
+                                    <h2><span id="10_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="11"></span></h2>
+                                    <h2><span id="11_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="12"></span></h2>
+                                    <h2><span id="12_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="13"></span></h2>
+                                    <h2><span id="13_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="14"></span></h2>
+                                    <h2><span id="14_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="15"></span></h2>
+                                    <h2><span id="15_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="16"></span></h2>
+                                    <h2><span id="16_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="17"></span></h2>
+                                    <h2><span id="17_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="18"></span></h2>
+                                    <h2><span id="18_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="19"></span></h2>
+                                    <h2><span id="19_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="20"></span></h2>
+                                    <h2><span id="20_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-laptop"></i>
+                                    <h2><span id="21"></span></h2>
+                                    <h2><span id="21_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-users"></i>
+                                    <h2><span id="22"></span></h2>
+                                    <h2><span id="22_status"></span></h2>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-envelope"></i>
+                                    <h2><span id="23"></span></h2>
+                                    <h2><span id="23_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="menu-section" class="active">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 margin-bottom-20">
+                                <div class="black-bg btn-menu">
+                                    <i class="fa fa-cubes"></i>
+                                    <h2><span id="24"></span></h2>
+                                    <h2><span id="24_status"></span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+                <p class="footer-text">Copyright &copy; 2022 Steve Deane Jr</p>
+            </div>
+            <!-- /.footer -->
+        </div>
+    </div>
+    <!-- /#main-wrapper -->
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- /#preloader -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo_script.js"></script>
+</body>
+
+</html>

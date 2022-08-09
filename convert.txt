@@ -1,1 +1,0 @@
-{"TrueNas": ["10.10.10.10", "UP"], "Desktop": ["10.10.10.9", "UP"], "Torrent-box": ["10.10.10.206", "DOWN"], "Plex": ["10.10.10.43", "UP"], "HomeAssistant": ["10.10.10.7", "UP"], "InfluxDB": ["10.10.10.13", "UP"], "Portainer": ["10.10.10.8", "UP"], "PiHole": ["10.10.10.2", "UP"], "Mikrotik": ["10.10.10.3", "UP"]}
